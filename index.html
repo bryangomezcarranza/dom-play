@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Title Goes Here</title>
+     <title>Dom Play</title>
   <meta charset="utf-8" />
   <meta name="robots" content="noindex,nofollow" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/nav.css" />
   <style>
-    /* p.hamlet {
+    /* p.tony {
         background-color: yellow;
     }
     */
 
     /* This here, we are going inside the div, to the p tags, child selectors. For span is different. You do not need to on inside, because its not a child or parent.  */
-    #play span{
+    /* #play span{
       background-color: blue;
-    }
+    } */
+
 
   </style>
  </head>
  <body>
      <header>
-     <h1>Title Goes Here</h1>
+     <h1>Dom Play</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
             <a href="#" target="_blank">Name of project goes here</a>
@@ -32,12 +33,18 @@
      
    <main class="wrapper">
 
+    <p>Welcome to Dom Play! On this page, we have a script with two characters: Tony and Rico. Simply click on a character's line, and their lines will be highlighted. How does it work? Each character has a data-actor tag that connects to an anonymous function, capturing the actor's identity upon click. With the highlightActor() function, we display the currently clicked actor. We also establish a function to highlight the character clicked. By determining the active actor and using an if statement, we highlight the selected character's lines and revert to the default state when another character is clicked. Enjoy the simplicity of it all!</p>
+    <hr>
     <div id="play"> 
-        <p><span data-actor="hamlet">Hamlet: To be or not to be?</span></p>
-        <p><span data-actor="skull">Skull: Are you talking to me?</span></p>
-        <p><span data-actor="hamlet">Hamlet: What did you say?</span></p>
-        <p><span data-actor="skull">Skull: Nothing bruh</span></p>
-        <p><span data-actor="hamlet">Hamlet: Good, thought i was going crazy</span></p>
+        <p><span data-actor="tony">Tony: Rico, my friend, what do you have for me today?</span></p>
+        <p><span data-actor="rico">Rico: Tony, I've got an interesting proposal. A new investment opportunity.</span></p>
+        <p><span data-actor="tony">Tony: Tell me more, Rico. I'm all ears.</span></p>
+        <p><span data-actor="rico">Rico: It's a tech startup, Tony. They're developing groundbreaking software, and they need our financial backing.</span></p>
+        <p><span data-actor="tony">Tony: How much are we talking about, Rico?</span></p>
+        <p><span data-actor="rico">Rico: They're looking for a million-dollar investment, Tony. But the potential returns are immense.</span></p>
+        <p><span data-actor="tony">Tony: Rico, let's do it. I trust your judgment. Set up a meeting with their CEO. I want to hear it straight from the source.</span></p>
+        <p><span data-actor="rico">Rico: Thanks, Tony. I'll arrange everything. This could be a game-changer for us.</span></p>
+        <p><span data-actor="tony">Tony: To new opportunities, Rico. We're always one step ahead.</span></p>
     </div>
 
      <footer>
